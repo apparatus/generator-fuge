@@ -1,4 +1,4 @@
-# generator-microbial [![Build Status](https://secure.travis-ci.org/pelger/generator-microbial.png?branch=master)](https://travis-ci.org/pelger/generator-microbial)
+# generator-fuge [![Build Status](https://secure.travis-ci.org/pelger/generator-fuge.png?branch=master)](https://travis-ci.org/pelger/generator-fuge)
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -23,16 +23,16 @@ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-microbial from npm, run:
+To install generator-fuge from npm, run:
 
 ```bash
-npm install -g generator-microbial
+npm install -g generator-fuge
 ```
 
 Finally, initiate the generator:
 
 ```bash
-yo microbial
+yo fuge
 ```
 
 ### Getting To Know Yeoman

@@ -1,14 +1,14 @@
 {
-  "name": "generator-microbial",
+  "name": "generator-fuge",
   "version": "0.1.1",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "pelger/generator-microbial",
+  "repository": "apparatus/generator-fuge",
   "author": {
     "name": "Peter Elger",
     "email": "",
-    "url": "https://github.com/pelger"
+    "url": "https://github.com/apparatus"
   },
   "scripts": {
     "test": "mocha"
