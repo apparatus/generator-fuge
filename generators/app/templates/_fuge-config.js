@@ -13,9 +13,7 @@ module.exports = {
   monitor: true,
 
   // exclude these patterns from the monitor
-  exclude: ['**/node_modules',
-            '**/.git',
-            '**/*.log'],
+  exclude: /node_modules|\.git|\.log/mgi,
 
   // override section. Allows the default build, run and debug commands
   // to be overriden on a service by service basis. These commands are
