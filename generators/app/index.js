@@ -9,6 +9,7 @@ module.exports = yeoman.generators.Base.extend({
     app: function () {
       this.fs.copy(this.templatePath('_compose-dev.yml'), this.destinationPath('compose-dev.yml'));
       this.fs.copy(this.templatePath('_fuge-config.js'), this.destinationPath('fuge-config.js'));
+      this.fs.copy(this.templatePath('_docker-compose.yml'), this.destinationPath('docker-compose.yml'));
     },
 
     projectfiles: function () {
