@@ -10,6 +10,7 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(this.templatePath('_compose-dev.yml'), this.destinationPath('compose-dev.yml'));
       this.fs.copy(this.templatePath('_fuge-config.js'), this.destinationPath('fuge-config.js'));
       this.fs.copy(this.templatePath('_docker-compose.yml'), this.destinationPath('docker-compose.yml'));
+      this.fs.copy(this.templatePath('_env'), this.destinationPath('env'));
     },
 
     projectfiles: function () {
@@ -21,4 +22,3 @@ module.exports = yeoman.generators.Base.extend({
 //    this.npmInstall();
   }
 });
-
