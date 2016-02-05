@@ -5,7 +5,7 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('microbial:app', function () {
+describe('fuge:system', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/app'))
       .withOptions({ skipInstall: true })
@@ -15,10 +15,10 @@ describe('microbial:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'bower.json',
-      'package.json',
-      '.editorconfig',
-      '.jshintrc'
+      'env',
+      'compose-dev.yml',
+      'docker-compose.yml',
+      'fuge-config.js'
     ]);
   });
 });
