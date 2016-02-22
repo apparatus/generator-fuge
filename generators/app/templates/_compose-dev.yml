@@ -1,3 +1,6 @@
 frontend:
   build: ../site/
   container_name: site
+api:
+  build: ../api/
+  container_name: api
