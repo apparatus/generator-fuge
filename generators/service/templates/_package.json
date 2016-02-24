@@ -3,8 +3,6 @@
   "description": "my awesome service",
   "keywords": [
     "seneca",
-    "<%= transport %>",
-    "transport",
     "service"
   ],
   "license": "MIT",
@@ -14,9 +12,6 @@
     "node": "*"
   },
   "dependencies": {
-    <% if (transport === 'redis') { %>
-    "seneca-redis-queue-transport": "0.1.1",
-    <% } %>
     "seneca": "^0.7.1",
     "seneca-env-plugins": "0.0.0"
   },
