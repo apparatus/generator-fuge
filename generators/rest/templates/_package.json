@@ -11,9 +11,6 @@
     "node": "*"
   },
   "dependencies": {
-    <% if (transport === 'redis') { %>
-    "seneca-redis-queue-transport": "0.1.1",
-    <% } %>
     "good": "^6.4.0",
     "good-console": "^5.1.0",
     "hapi": "^10.5.0",
