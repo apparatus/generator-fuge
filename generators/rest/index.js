@@ -7,22 +7,25 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     app: function () {
 
+      var tpl = this.templatePath.bind(this);
+      var dst = this.destinationPath.bind(this);
+
       var opts = {
         name: this.options.name || 'NAME_ME',
         framework: this.options.framework || 'hapi'
       };
 
-      this.fs.copy(this.templatePath('_index.js'),
-                   this.destinationPath('index.js'));
-      this.fs.copyTpl(this.templatePath('_package.json'),
-                  this.destinationPath('package.json'),
-                  opts);
-      this.fs.copyTpl(this.templatePath('_services.js'),
-                  this.destinationPath('services.js'),
-                  opts);
-      this.fs.copy(this.templatePath('test/_siteTest.js'),
-                   this.destinationPath('test/siteTest.js'));
+      if (opts.framework === 'express') {
+        this.fs.copy(tpl('_express.index.js'), dst('index.js'));
+        this.fs.copyTpl(tpl('_express.package.json'), dst('package.json'), opts)
+        this.fs.copyTpl(tpl('_express.services.js'), dst('services.js'), opts);
+      } else {
+        this.fs.copy(tpl('_index.js'), dst('index.js'));
+        this.fs.copyTpl(tpl('_package.json'), dst('package.json'), opts)
+        this.fs.copyTpl(tpl('_services.js'), dst('services.js'), opts);
+      }
 
+      this.fs.copy(tpl('test/_siteTest.js'), dst('test/siteTest.js'));
     },
 
     projectfiles: function () {
