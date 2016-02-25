@@ -5,7 +5,7 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('seneca-http:app', function () {
+describe('fuge-service', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/service'))
       .withOptions({ skipInstall: true })
