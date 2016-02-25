@@ -9,7 +9,7 @@ module.exports = yeoman.generators.Base.extend({
 
       var opts = {
         name: this.options.name || 'NAME_ME',
-        transport: this.options.transport || 'http'
+        framework: this.options.framework || 'hapi'
       };
 
       this.fs.copy(this.templatePath('_index.js'),

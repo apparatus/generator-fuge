@@ -11,10 +11,9 @@
     "node": "*"
   },
   "dependencies": {
-    "chairo": "^2.0.0",
-    "good": "^6.4.0",
-    "good-console": "^5.1.0",
-    "hapi": ">=11.x.x"
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "seneca": "^1.2.0"
   },
   "repository": {
     "private": true

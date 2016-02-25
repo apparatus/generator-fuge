@@ -1,20 +1,19 @@
 {
-  "name": "<%=name%>",
-  "description": "my awesome site",
+  "name": "<%= name %>",
+  "description": "my awesome service",
   "keywords": [
-    "awesome",
-    "site"
+    "seneca",
+    "service"
   ],
+  "license": "MIT",
   "version": "0.1.0",
-  "main": "./index.js",
+  "main": "./service.js",
   "engines": {
     "node": "*"
   },
   "dependencies": {
-    "chairo": "^2.0.0",
-    "good": "^6.4.0",
-    "good-console": "^5.1.0",
-    "hapi": ">=11.x.x"
+    "seneca": "^0.7.1",
+    "seneca-env-plugins": "0.0.0"
   },
   "repository": {
     "private": true
