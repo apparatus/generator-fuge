@@ -8,8 +8,7 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     app: function () {
       var opts = {
-        name: this.options.name || 'NAME_ME',
-        framework: this.options.framework || 'hapi'
+        name: this.options.name || 'NAME_ME'
       };
       this.fs.copyTpl(
         this.templatePath('_package.json'),
