@@ -12,6 +12,11 @@ module.exports = {
   // if true monitor running processes for changes by default
   monitor: true,
 
+  // default build, run and debug commands for all services
+  defaults: {
+    build: 'npm install'
+  },
+
   // exclude these patterns from the monitor
   exclude: /node_modules|\.git|\.log/mgi,
 
