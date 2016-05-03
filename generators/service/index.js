@@ -24,9 +24,10 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_README.md'),
         this.destinationPath('README.md')
       );
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('test/_serviceTest.js'),
-        this.destinationPath('test/serviceTest.js')
+        this.destinationPath('test/serviceTest.js'),
+        opts
       );
     },
 

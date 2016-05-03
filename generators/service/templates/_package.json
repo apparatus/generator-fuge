@@ -12,8 +12,7 @@
     "node": "*"
   },
   "dependencies": {
-    "seneca": "^0.7.1",
-    "seneca-env-plugins": "0.0.0"
+    "seneca": "^2.0.1"
   },
   "repository": {
     "private": true
@@ -29,6 +28,7 @@
     "commit-check"
   ],
   "devDependencies": {
+    "jshint": "^2.9.2",
     "pre-commit": "^1.1.1",
     "tape": "^4.2.0"
   }
