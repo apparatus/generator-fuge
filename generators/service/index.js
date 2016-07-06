@@ -2,8 +2,7 @@
 
 var yeoman = require('yeoman-generator');
 
-
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
 
   writing: {
     app: function () {
