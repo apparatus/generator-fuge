@@ -1,5 +1,7 @@
 # generator-fuge [![Build Status](https://secure.travis-ci.org/pelger/generator-fuge.png?branch=master)](https://travis-ci.org/pelger/generator-fuge)
 
+[![Join the chat at https://gitter.im/apparatus/generator-fuge](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/apparatus/generator-fuge?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > [Yeoman](http://yeoman.io) generator
 
 
